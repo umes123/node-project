@@ -12,9 +12,9 @@
   # requestBody: 
   {
 	"DOB": "04/02/1994",                   // must follow this format (regex implemented)
-	"email": "dmoharana4@gmail.com",      // email validation implemented (regex)
+	"email": "email@gmail.com",      // email validation implemented (regex)
 	"password":"Banda@12",             // password will be stored in DB after Hashing (min 8 letter password, with at least a symbol, upper and lower case letters and a number)
-	"username": "Debasish", // username is unique (If another user tries to register with same username then it will throw error)
+	"username": "umesh", // username is unique (If another user tries to register with same username then it will throw error)
 	"role": "Admin"            // must be one of ("Admin" or "User") case sensitive
  }                       //(All the fields are required)
  
@@ -34,8 +34,8 @@
     
   # requestBody: 
   {
-	"password":"Banda@12",   // (If password doesn't match then it will throw error "Wrong Password")
-	"username": "Debasish"   // (If user doesn't exists then it will throw error "User doesn't exist")
+	"password":"admin@12",   // (If password doesn't match then it will throw error "Wrong Password")
+	"username": "umesh"   // (If user doesn't exists then it will throw error "User doesn't exist")
   }
   
   # SuccessResponse
@@ -64,7 +64,7 @@
  
  # failureResponse :
 {
-    "username": "Debasish",
+    "username": "Umesh",
     "message": "Not Balanced",
     "attempts": 1
 }
@@ -96,10 +96,10 @@
   {
     "Users": [
         {
-            "email": "dmoharana4@gmail.com",
+            "email": "umesh@gmail.com",
             "password": "$2b$10$uKScd/R0U.DG43TcatwAaOaHkvRW/ETJ17pCuLsv1E1odYkTTpkwa",
             "DOB": "04/02/1994",
-            "username": "Debasish",
+            "username": "Umesh",
             "role": "Admin"
         }
     ]
